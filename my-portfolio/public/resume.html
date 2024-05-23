@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume - Yaswanth Krishna Vayalapalli Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    .resume-container {
+      text-align: center;
+    }
+    .resume-download {
+      margin-top: 20px;
+    }
+    .resume-upload {
+      margin-top: 40px;
+    }
+    .resume-upload form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .resume-upload input, .resume-upload button {
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+    }
+    .resume-upload button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .resume-upload button:hover {
+      background-color: #45a049;
+    }
+  </style>
+  <script>
+    function downloadResume() {
+      window.open('resume.pdf', '_blank');
+    }
+
+    function showUploadForm() {
+      const password = prompt('Enter password to upload new resume:');
+      if (password === 'upload@vyk') {
+        document.getElementById('upload-form').style.display = 'block';
+      } else {
+        alert('Incorrect password!');
+      }
+    }
+  </script>
+</head>
+<body>
+  <header>
+    <h1>Resume</h1>
+  </header>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="work-experience.html">Work Experience</a>
+    <a href="skills.html">Skills</a>
+    <a href="education.html">Education</a>
+    <a href="contact.html">Contact</a>
+    <a href="resume.html">Resume</a>
+  </nav>
+  <section id="resume" class="resume-container">
+    <h2>My Resume</h2>
+    <p>Click the button below to download my latest resume.</p>
+    <div class="resume-download">
+      <button onclick="downloadResume()">Download Resume</button>
+    </div>
+    <div class="resume-upload">
+      <button onclick="showUploadForm()">Upload New Resume</button>
+      <form id="upload-form" action="/upload-resume" method="post" enctype="multipart/form-data" style="display:none;">
+        <input type="file" name="resume" accept="application/pdf" required>
+        <input type="hidden" name="password" value="upload@vyk">
+        <button type="submit">Upload Resume</button>
+      </form>
+    </div>
+  </section>
+</body>
+</html>

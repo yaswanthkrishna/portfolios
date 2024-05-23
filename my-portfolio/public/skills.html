@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skills - Yaswanth Krishna Vayalapalli Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+    }
+    .skills-category {
+      margin-bottom: 40px;
+    }
+    .skills-category h3 {
+      color: #4CAF50;
+      border-bottom: 2px solid #4CAF50;
+      padding-bottom: 10px;
+    }
+    .skills-list {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .skill-item {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      position: relative;
+    }
+    .skill-item:hover {
+      transform: translateY(-5px);
+    }
+    .skill-item h4 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+    .skill-level {
+      margin-top: 10px;
+    }
+    .tooltip {
+      display: none;
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      border-radius: 4px;
+      position: absolute;
+      bottom: 100%;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+      width: 250px;
+      text-align: center;
+    }
+    .skill-item:hover .tooltip {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Skills</h1>
+  </header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="work-experience.html">Work Experience</a>
+    <a href="skills.html">Skills</a>
+	<a href="education.html">Education</a>
+	<a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section id="skills">
+    <div class="skills-category">
+      <h3>Programming Languages</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h4>Python</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Used in multiple projects including "Kelex" and "Flight Departure Prediction". Experienced with data analysis using Pandas and NumPy, and machine learning with TensorFlow and Scikit-Learn.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Java</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Utilized in professional experience at NPCI and NCR. Developed automation testing tools and enhanced backend systems.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>C++</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Used in academic courses and professional projects at NCR, focusing on system-level programming and performance optimization.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>JavaScript</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Extensive use in front-end development with React.js, enhancing user interfaces and improving client-side performance.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>C#</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Developed financial software features at NCR, focusing on scalable technology development in financial products.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>.NET</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Utilized in developing financial software features, increasing customer satisfaction by focusing on scalability.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skills-category">
+      <h3>Databases</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h4>MongoDB</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Used in various projects for efficient data handling and retrieval, especially in full stack applications.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Oracle</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Led the migration from Oracle to Postgres at NCR, ensuring data integrity and system functionality.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>PostgreSQL</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Utilized in professional experience, particularly in enhancing database queries and migrations.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>MySQL</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Used in academic projects like the Java-based Monopoly game for managing game dynamics and player interactions.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skills-category">
+      <h3>Frameworks & Libraries</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h4>React.js</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Extensive use in front-end development for creating dynamic and responsive user interfaces.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Node.js</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Used in various projects and professional roles for developing robust backend services.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Express</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Utilized in conjunction with Node.js for creating efficient web server frameworks.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Spring Boot</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Used for building stand-alone, production-grade Spring-based applications.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Flask</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Developed the Kelex chatbot using Flask, leveraging its simplicity and flexibility for web development.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>NLTK</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Used in the Flight Departure Prediction project for natural language processing tasks.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Apache Kafka</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Implemented for real-time data streaming and processing in professional roles.
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="skills-category">
+      <h3>Data Science & Machine Learning</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h4>Pandas</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Extensively used for data manipulation and analysis in various data science and machine learning projects.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>NumPy</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Used for numerical computing tasks and data manipulation in conjunction with Pandas.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>TensorFlow</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Applied in machine learning projects, including the creation of predictive models.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>PyTorch</h4>
+          <div class="skill-level">⭐⭐⭐☆☆</div>
+          <div class="tooltip">
+            Used in the Flight Departure Prediction project for building and training neural networks.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Scikit-Learn</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Utilized for a variety of machine learning tasks, including predictive modeling and data analysis.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Tools</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h4>Visual Studio</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Used extensively for .NET and C# development in professional projects.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>PyCharm</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Utilized for Python development in various projects including data analysis and web development.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>JIRA</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Used for project management and issue tracking in Agile development environments.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Jenkins</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Implemented for continuous integration and deployment in various projects.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>GitHub</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Used for version control and collaborative development in all projects.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="skills-category">
+      <h3>Methodologies</h3>
+      <div class="skills-list">
+        <div class="skill-item">
+          <h4>Agile</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Applied in various professional roles to enhance development processes and team collaboration.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Scrum</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Utilized in project management to deliver iterative and incremental products.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Continuous Integration</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Implemented in projects to ensure regular integration of code changes and automated testing.
+          </div>
+        </div>
+        <div class="skill-item">
+          <h4>Test-Driven Development (TDD)</h4>
+          <div class="skill-level">⭐⭐⭐⭐☆</div>
+          <div class="tooltip">
+            Practiced in developing reliable and maintainable code by writing tests before actual code.
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+</body>
+</html>

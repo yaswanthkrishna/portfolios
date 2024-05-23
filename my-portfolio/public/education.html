@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education - Yaswanth Krishna Vayalapalli Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    h2 {
+      color: #4CAF50;
+      text-align: center;
+    }
+    .education-section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    .education-item {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .education-item-icon {
+      flex-shrink: 0;
+      width: 50px;
+      height: 50px;
+      margin-right: 20px;
+    }
+    .education-item h3 {
+      color: #4CAF50;
+      margin-top: 0;
+    }
+    .education-item p {
+      margin: 5px 0;
+    }
+    .education-item span {
+      font-weight: bold;
+    }
+    .education-details {
+      flex-grow: 1;
+    }
+    .grade {
+      background-color: #4CAF50;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 10px;
+    }
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+      margin-top: 20px;
+    }
+    .timeline:before {
+      content: '';
+      position: absolute;
+      left: 10px;
+      top: 0;
+      bottom: 0;
+      width: 2px;
+      background-color: #4CAF50;
+    }
+    .timeline-item {
+      position: relative;
+      margin-bottom: 20px;
+    }
+    .timeline-item:before {
+      content: '';
+      position: absolute;
+      left: -9px;
+      top: 0;
+      width: 20px;
+      height: 20px;
+      background-color: #4CAF50;
+      border-radius: 50%;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Education</h1>
+  </header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="work-experience.html">Work Experience</a>
+    <a href="skills.html">Skills</a>
+	<a href="education.html">Education</a>
+	<a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section id="education" class="education-section">
+    <h2>Education</h2>
+    <div class="timeline">
+      <div class="timeline-item">
+        <div class="education-item">
+          <img src="syracuse.jpeg" alt="Syracuse University" class="education-item-icon">
+          <div class="education-details">
+            <h3>Syracuse University</h3>
+            <p><span>Degree:</span> Master of Science in Computer Engineering</p>
+            <p><span>Location:</span> Syracuse, New York, USA</p>
+            <p><span>Graduation Date:</span> May 2024</p>
+            <p><span>Relevant Courses:</span> Object-Oriented Programming with C++, Machine Learning, Artificial Intelligence, Data Structures and Algorithms</p>
+            <div class="grade">GPA: 3.5/4.0</div>
+          </div>
+        </div>
+      </div>
+      <div class="timeline-item">
+        <div class="education-item">
+          <img src="gitam.jpeg" alt="Gitam University" class="education-item-icon">
+          <div class="education-details">
+            <h3>Gitam University</h3>
+            <p><span>Degree:</span> Bachelor of Science in Electronics and Computer Science</p>
+            <p><span>Location:</span> Hyderabad, Telangana, India</p>
+            <p><span>Graduation Date:</span> May 2019</p>
+            <div class="grade">CGPA: 8.31/10.0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

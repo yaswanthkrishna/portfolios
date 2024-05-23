@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects - Yaswanth Krishna Vayalapalli Portfolio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    nav {
+      background-color: #333;
+      color: white;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      padding: 10px;
+      transition: background-color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #575757;
+    }
+    section {
+      padding: 20px;
+      margin-top: 20px;
+      background-color: white;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      margin: 20px;
+      border-radius: 8px;
+    }
+    #projects {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .project-item {
+      background-color: #ffffff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .project-item:hover {
+      transform: translateY(-5px);
+    }
+    .project-item h3 {
+      margin-top: 0;
+      color: #4CAF50;
+    }
+    .project-item p {
+      margin: 10px 0;
+    }
+    .project-item a {
+      display: inline-block;
+      margin-top: 10px;
+      text-decoration: none;
+      color: #4CAF50;
+      border: 1px solid #4CAF50;
+      padding: 10px 15px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    .project-item a:hover {
+      background-color: #4CAF50;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projects</h1>
+  </header>
+  <nav>
+    <a href="home.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="work-experience.html">Work Experience</a>
+    <a href="skills.html">Skills</a>
+	<a href="education.html">Education</a>
+	<a href="resume.html">Resume</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+  <section id="projects">
+    <div class="project-item">
+      <h3>Kelex</h3>
+      <p><strong>January 2024 - March 2024</strong></p>
+      <p>Developed a Flask-based chatbot utilizing natural language processing to facilitate conversations, enhancing user engagement. Features multilingual support, significantly broadening accessibility and providing intelligent, context-aware responses.</p>
+      <p><strong>Technologies Used:</strong> Flask, Python, NLP</p>
+      <a href="https://github.com/yaswanthkrishna/Kelex-Chatbot" target="_blank">View on GitHub</a>
+    </div>
+	
+	<div class="project-item">
+      <h3>Bill Buddy</h3>
+      <p><strong>August 2023 - December 2023</strong></p>
+      <p>Created a Android application which keeps a list of transactions between a group of people or friends. It also have a reminds user regarding the transactiona and allow user to simplify the transactions.</p>
+      <p><strong>Technologies Used:</strong> Kotlin, Android studios, MySQL</p>
+      <a href="https://github.com/yaswanthkrishna/BillBuddy" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-item">
+      <h3>Flight Departure Prediction</h3>
+      <p><strong>January 2023 - May 2023</strong></p>
+      <p>Leveraged historical flight data to develop a predictive model using NLTK and PyTorch, improving forecast accuracy and operational planning for airline schedules. Focused on solving complex problems through data-driven insights, enhancing the accuracy of predictions.</p>
+      <p><strong>Technologies Used:</strong> NLTK, PyTorch, Python</p>
+      <a href="https://github.com/yaswanthkrishna/Airline_prediction" target="_blank">View on GitHub</a>
+    </div>
+
+    <div class="project-item">
+      <h3>Monopoly Game</h3>
+      <p><strong>January 2023 - May 2023</strong></p>
+      <p>Created a Java-based Monopoly game with REST microservices and MySQL databases. Focused on managing game dynamics to ensure scalable and engaging player interactions, promoting multiplayer experience.</p>
+      <p><strong>Technologies Used:</strong> Java, REST, MySQL</p>
+      <a href="https://github.com/yaswanthkrishna/Monopoly" target="_blank">View on GitHub</a>
+    </div>
+  </section>
+</body>
+</html>
