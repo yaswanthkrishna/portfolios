@@ -1,30 +1,35 @@
 const express = require('express');
 const multer = require('multer');
-const fs = require('fs');
 const path = require('path');
 const app = express();
-const upload = multer({ dest: 'uploads/' });
+const PORT = process.env.PORT || 3000;
 
-app.use(express.static('public')); // Serve static files
-app.use(express.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
-
-app.post('/upload-resume', upload.single('resume'), (req, res) => {
-  const password = req.body.password;
-  if (password === 'upload@vyk') {
-    const file = req.file;
-    if (!file) {
-      return res.status(400).send('No file uploaded.');
-    }
-    const targetPath = path.join(__dirname, 'public', 'resume.pdf');
-    fs.rename(file.path, targetPath, (err) => {
-      if (err) return res.status(500).send('Error uploading file.');
-      res.send('File uploaded successfully.');
-    });
-  } else {
-    res.status(401).send('Unauthorized');
+// Set storage engine
+const storage = multer.diskStorage({
+  destination: './uploads/',
+  filename: function(req, file, cb) {
+    cb(null, file.fieldname + '-' + Date.now() + path.extname(file.originalname));
   }
 });
 
-app.listen(3000, () => {
-  console.log('Server started on http://localhost:3000');
+// Init upload
+const upload = multer({
+  storage: storage
+}).single('myFile');
+
+// Static folder
+app.use(express.static(path.join(__dirname, '../public')));
+
+app.get('/', (req, res) => res.sendFile(path.join(__dirname, '../public/index.html')));
+
+app.post('/upload', (req, res) => {
+  upload(req, res, (err) => {
+    if (err) {
+      res.send('Error uploading file.');
+    } else {
+      res.send('File uploaded successfully.');
+    }
+  });
 });
+
+app.listen(PORT, () => console.log(`Server started on port ${PORT}`));
